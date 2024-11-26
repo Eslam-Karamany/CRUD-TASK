@@ -1,0 +1,38 @@
+body {
+    background-color: #f9f3e4;
+    
+  }
+  
+  h1 {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    color: #5f4109;
+    margin: auto;
+    width: 25%;
+    
+  }
+
+.btn-save{
+    background-color: rgb(251, 194, 72); 
+
+}
+.btn-save:hover{
+    background-color: #f5a627; 
+    color:white ;
+
+}
+.hover-1 {
+    background: linear-gradient(rgb(251, 194, 72) 0 0) right / var(--p,0) no-repeat;
+    transition: .4s,background-position 0s;
+  }
+  .hover-1:hover {
+    --p: 100%;
+    background-position: left;
+  }
+
+  ::selection {
+    background-color: rgba(249, 180, 32, 0.804); /* Green background */
+    color: rgb(255, 255, 255); /* White text */
+}

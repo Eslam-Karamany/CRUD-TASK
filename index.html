@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmarker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <!-- <link rel="shortcut icon" href="images/favicon_io/favicon.ico" type="image/x-icon"> change favicon -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-4">
+        <h1 class="hover-1">Bookmarker</h1>
+        <p class="text-center text-success"><strong>📚 Bookmark your favorite sites 📚</strong></p>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="form-floating my-1">
+              <input type="text" class="form-control" id="siteName" placeholder="">
+              <label for="siteName">📁 Site Name</label>
+            </div>
+            <div class="form-floating my-1">
+              <input type="url" class="form-control" id="siteURL" placeholder="">
+              <label for="siteURL">🔗 Site URL</label>
+            </div>
+            <button onclick="addBookmark()" id="submitButton" class="btn  w-100 my-3 btn-save">Save Bookmark</button>
+        </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Index</th>
+                  <th>Website Name</th>
+                  <th>Visit</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody id="bookmarkTable">
+                 
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
+
