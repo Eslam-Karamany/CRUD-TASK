@@ -32,7 +32,6 @@ function addBookmark() {
         localStorage.setItem("allbookmarks", JSON.stringify(bookmarks));
         
         displayBookmarks();
-        console.log(bookmarks);
         clearUI()
     }
     
@@ -107,16 +106,20 @@ function validationPopupsHandling(bookmark) {
             text: text,
             icon: "error",
             showCancelButton: true,
-            confirmButtonColor: "#3085d6",
+            confirmButtonColor: "#f5a627",
             cancelButtonColor: "#d33",
             confirmButtonText: "show me url rules",
-            cancelButtonText: "ignore",
+            cancelButtonText: "cancel",
           }).then((result) => {
             if (result.isConfirmed) {
               Swal.fire({
                 title: "Input Rules",
                 html: '<pre>' + str + '</pre>',
-                icon: "info"
+                icon: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#f5a627",
+                confirmButtonText: "close",
+
               });
             }
           })
